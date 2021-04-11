@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mrk2ejt.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <nav>
+        <a class="button" href="index.html">Home</a>
+        <a class="button" href="new-post.html">New Post</a>
+      </nav>
+    </div>
+
+    <form>
+      <label for="post_title">Title</label>
+      <input
+        type="text"
+        name="title"
+        required
+        id="post_title"
+        class="formbox"
+        value="My title"
+      />
+
+      <label for="post_username">Username</label>
+      <input
+        type="text"
+        class="formbox"
+        name="username"
+        required
+        id="post_username"
+      />
+
+      <label for="post_content">Content</label>
+      <textarea
+        type="content"
+        name="content"
+        class="formbox formbox1"
+        required
+        id="post_content"
+      ></textarea>
+
+      <input type="submit" class="send" value="Send Suggestion" />
+    </form>
+    <p class="hidden">Thank you! We will review your post!</p>
+    <script src="new-post.js"></script>
+  </body>
+</html>

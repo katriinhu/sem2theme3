@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mrk2ejt.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <nav>
+        <a class="button" href="index.html">Home</a>
+        <a class="button" href="new-post.html">New Post</a>
+      </nav>
+    </div>
+    <article>
+      <h1 class="title"></h1>
+      <h2>by <span></span></h2>
+      <p></p>
+    </article>
+
+    <section class="comments">
+      <h2>Comments</h2>
+      <template class="commentTemplate">
+        <h3>Great article</h3>
+        <p class="commentText">by katriinhu</p>
+      </template>
+      <ol class="commentList"></ol>
+    </section>
+
+    <form id="commentForm">
+      <label for="comment_username">username</label>
+      <input
+        type="text"
+        required
+        name="username"
+        class="formbox"
+        id="comment_username"
+      />
+
+      <label for="comment_email">e-mail</label>
+      <input
+        type="email"
+        required
+        name="email"
+        class="formbox"
+        id="comment_email"
+      />
+
+      <label for="comment_content">Your Comment</label>
+      <textarea
+        required
+        name="content"
+        class="formbox formbox1"
+        id="comment_content"
+      ></textarea>
+
+      <input type="submit" class="send" value="Save Comment" />
+    </form>
+    <script src="article.js"></script>
+  </body>
+</html>
